@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  --font-poppins: Poppins;
+  --font-montserrat: Montserrat;
+  --font-size-sm: 14px;
+  --color-white: #fff;
+}
+
+/*# sourceMappingURL=index.689f5f05.css.map */

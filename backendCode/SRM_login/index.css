@@ -1,0 +1,227 @@
+.frame-child,
+.frame-item {
+  position: absolute;
+  top: 0;
+  height: 1024px;
+}
+.frame-child {
+  left: 908px;
+  background-color: rgba(45, 45, 45, 0.48);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+  width: 532px;
+}
+.frame-item {
+  left: 0;
+  background-color: rgba(10, 24, 26, 0.33);
+  width: 1440px;
+}
+.frame,
+.frame1,
+.rectangle-parent {
+  position: absolute;
+  left: 0;
+  height: 1174px;
+}
+.frame1 {
+  top: 0;
+  width: 1674px;
+  overflow: hidden;
+  background-image: url(./public/frame@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.frame,
+.rectangle-parent {
+  top: 274px;
+  width: 1440px;
+}
+.frame {
+  top: -274px;
+  height: 1448px;
+  overflow: hidden;
+}
+.existing-member1 {
+  text-transform: uppercase;
+}
+.existing-member {
+  margin: 0;
+}
+.existing-member-welcome-container {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 203.35px);
+  font-size: 24px;
+  line-height: 36px;
+  display: inline-block;
+  width: 316px;
+  height: 70.7px;
+}
+.frame-inner {
+  position: absolute;
+  top: 60.8px;
+  left: calc(50% - 203.85px);
+  border-top: 1px dashed var(--color-white);
+  box-sizing: border-box;
+  width: 407.7px;
+  height: 1px;
+}
+.anshakapilagmailcom {
+  position: absolute;
+  top: 4px;
+  left: calc(50% - 102.65px);
+  line-height: 18px;
+  font-weight: 500;
+  display: inline-block;
+  width: 245.3px;
+  height: 24px;
+}
+.anshakapilagmailcom-parent,
+.line-parent,
+.vuesaxlinearsms-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+}
+.anshakapilagmailcom-parent,
+.line-parent {
+  width: 285.3px;
+}
+.line-parent {
+  top: 124px;
+  width: 406.7px;
+  height: 61.3px;
+  font-family: var(--font-poppins);
+}
+.enter-password {
+  position: absolute;
+  top: 4px;
+  left: calc(50% - 52px);
+  line-height: 18px;
+  font-weight: 500;
+  display: inline-block;
+  width: 144px;
+  height: 24px;
+}
+.line-group,
+.vuesaxlinearlock-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 184px;
+  height: 32px;
+}
+.line-group {
+  top: 238.7px;
+  width: 406.7px;
+  height: 61.3px;
+  opacity: 0.6;
+  font-family: var(--font-poppins);
+}
+.continue {
+  position: absolute;
+  top: 9.3px;
+  left: calc(50% - 176.65px);
+  line-height: 18px;
+  display: inline-block;
+  width: 102.7px;
+  height: 24px;
+}
+.continue-parent,
+.vuesaxlineararrow-left-icon {
+  position: absolute;
+  top: 0;
+  left: 310.7px;
+  width: 42.7px;
+  height: 42.7px;
+}
+.continue-parent {
+  top: 10.7px;
+  left: 26.7px;
+  width: 353.3px;
+}
+.frame-wrapper {
+  position: absolute;
+  top: 353.3px;
+  left: calc(50% - 203.35px);
+  border-radius: 24px;
+  background-color: var(--color-white);
+  box-shadow: 0 16px 32px rgba(0, 158, 226, 0.1);
+  width: 406.7px;
+  height: 64px;
+  text-align: center;
+  font-size: 16px;
+  color: #1c1c1c;
+}
+.subtract-icon {
+  position: relative;
+  width: 300px;
+  height: 1px;
+}
+.or,
+.subtract-parent {
+  position: absolute;
+  height: 24px;
+}
+.or {
+  top: 0;
+  left: calc(50% - 15.3px);
+  letter-spacing: -0.28px;
+  line-height: 18px;
+  font-weight: 500;
+  display: inline-block;
+  width: 29.3px;
+}
+.subtract-parent {
+  top: 470.7px;
+  left: 53.3px;
+  width: 300px;
+  text-align: center;
+}
+.group-icon {
+  position: absolute;
+  top: 548px;
+  left: 79.3px;
+  width: 248px;
+  height: 72px;
+}
+.dont-have-account {
+  font-weight: 500;
+}
+.dont-have-account-container {
+  position: absolute;
+  top: 673.3px;
+  left: calc(50% - 162.05px);
+  display: inline-block;
+  width: 324px;
+  height: 13.3px;
+  font-family: var(--font-poppins);
+}
+.existing-member-welcome-back-parent,
+.frame2 {
+  position: absolute;
+  top: 60.7px;
+  left: 0;
+  width: 406.7px;
+  height: 686.7px;
+}
+.frame2 {
+  top: 76.3px;
+  left: 971px;
+  height: 747.3px;
+  overflow: hidden;
+}
+.log-in {
+  position: relative;
+  background-color: #088999;
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-montserrat);
+}

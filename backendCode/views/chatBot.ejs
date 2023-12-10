@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot Interface</title>
+</head>
+<body>
+  <h1>Chat with the Chatbot</h1>
+
+  <form id="chatForm">
+    <input type="text" id="userMessage" placeholder="Enter your message">
+    <button type="submit">Send</button>
+  </form>
+
+  <div id="chatDisplay">
+    <!-- Chat messages will be displayed here -->
+  </div>
+
+  <script>
+    // Handle form submission and interaction with the chatbot API
+    document.getElementById('chatForm').addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const userMessage = document.getElementById('userMessage').value;
+
+      try {
+        // Send user message to the chatbot API via a POST request
+        const response = await fetch('/chatbot', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ message: userMessage })
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          displayChatbotResponse(data.response);
+        } else {
+          throw new Error('Chatbot request failed');
+        }
+      } catch (error) {
+        console.error('Error sending message to chatbot:', error);
+        displayChatbotResponse('Error communicating with the chatbot');
+      }
+    });
+
+    // Function to display chatbot responses
+    function displayChatbotResponse(responseData) {
+      const chatDisplay = document.getElementById('chatDisplay');
+
+      // Check if the response is an image URL
+      if (isImageUrl(responseData)) {
+        const imageElement = document.createElement('img');
+        imageElement.src = responseData;
+        imageElement.style.maxWidth = '100%'; // Adjust image display
+        chatDisplay.appendChild(imageElement);
+      } else {
+        const chatMessage = document.createElement('p');
+        chatMessage.textContent = `Chatbot: ${responseData}`;
+        chatDisplay.appendChild(chatMessage);
+      }
+    }
+
+    // Function to check if the response is an image URL
+    function isImageUrl(url) {
+      return url.match(/\.(jpeg|jpg|gif|png)$/) != null;
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AR Clothing - Fades</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 16px;
+      background-color: #6c34db;
+      color: #fff;
+      font-size: 1.5em;
+    }
+
+    #card {
+      margin: 3em auto;
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background-color: #fff;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 400px;
+      background-color: #e0e0e0;
+      --poster-color: #ffffff00;
+      margin-bottom: 16px;
+      border-radius: 0 0 8px 8px;
+    }
+
+    model-viewer:not(:last-child) {
+      border-bottom: 1px solid #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 16px;
+      background-color: #9e34db;
+      color: #fff;
+      border-radius: 0 0 8px 8px;
+      font-size: 0.8em;
+    }
+  </style>
+  <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>AR Clothing</h1>
+  </header>
+
+  <div id="card">
+    <model-viewer src="https://cdn.glitch.global/c1d32e5f-017b-466c-be7f-cbac7b1419bc/akatsuki_coat_-_itachis_clothes.glb?v=1702138810199"
+      ios-src="https://cdn.glitch.global/c1d32e5f-017b-466c-be7f-cbac7b1419bc/Akatsuki_coat_-_Itachis_clothes.usdz?v=1702138813997"
+      poster="https://cdn.glitch.global/c1d32e5f-017b-466c-be7f-cbac7b1419bc/image_2023-12-09_214857946-removebg-preview.png?v=1702138815120"
+      alt="A 3D model of an astronaut"
+      shadow-intensity="1"
+      camera-controls
+      auto-rotate
+      ar>
+    </model-viewer>
+
+    <model-viewer src="https://cdn.glitch.me/c1d32e5f-017b-466c-be7f-cbac7b1419bc/merry_christmas.glb?v=1702140268896"
+      ios-src="https://cdn.glitch.global/c1d32e5f-017b-466c-be7f-cbac7b1419bc/merry_christmas.usdz?v=1702140232485"
+      poster="https://cdn.glitch.global/c1d32e5f-017b-466c-be7f-cbac7b1419bc/merry_christmas.png?v=1702140120730"
+      alt="A 3D model for Christmas"
+      shadow-intensity="1"
+      camera-controls
+      auto-rotate
+      ar>
+    </model-viewer>
+    
+    <model-viewer src="https://cdn.glitch.me/c1d32e5f-017b-466c-be7f-cbac7b1419bc/costume_bulanov_the_forest.glb?v=1702144202837"
+      ios-src="https://cdn.glitch.me/c1d32e5f-017b-466c-be7f-cbac7b1419bc/Costume_Bulanov_The_Forest.usdz?v=1702144214221"
+      poster="https://cdn.glitch.global/c1d32e5f-017b-466c-be7f-cbac7b1419bc/image_2023-12-09_225415863.png?v=1702144167238"
+      alt="A 3D model of an astronaut"
+      shadow-intensity="1"
+      camera-controls
+      auto-rotate
+      ar>
+    </model-viewer>
+  </div>
+
+  <footer>
+    &copy; 2023 Fades
+  </footer>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+
+</html>
