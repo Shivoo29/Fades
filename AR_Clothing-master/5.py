@@ -4,7 +4,7 @@ from PIL import Image
 from io import BytesIO
 
 
-openai.api_key = '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'
+openai.api_key = 'please put your own OpenAi AIP Key visit:https://openai.com/blog/openai-api'
 
 
 def get_response(prompt):
